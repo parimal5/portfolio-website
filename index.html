@@ -91,180 +91,6 @@
       gtag("js", new Date());
       gtag("config", "UA-122228201-4");
     </script>
-    <style>
-      .project-wrapper__text-info {
-        list-style-type: disc;
-        padding-left: 1.5rem;
-        margin-top: 1rem;
-        font-size: 1.4rem;
-        line-height: 1.7;
-        color: #333;
-      }
-
-      .project-wrapper__text-info li {
-        margin-bottom: 0.5rem;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-      }
-
-      body {
-        text-align: center;
-        line-height: 1.5;
-        background-color: #f5f5f5;
-        padding: 2rem 0;
-      }
-
-      .container {
-        width: 100%;
-        padding: 0 1.5rem;
-        margin: 0 auto;
-        max-width: 1140px;
-      }
-
-      .section-title {
-        margin-bottom: 4.5rem;
-        font-size: 4rem;
-        text-transform: uppercase;
-        color: #272341;
-      }
-
-      .project-wrapper {
-        margin-bottom: 15rem;
-      }
-
-      .project-wrapper .row {
-        display: grid;
-        gap: 3rem;
-        grid-template-columns: 1fr 1fr; /* Adjusted for better balance */
-        grid-template-areas: "text image";
-        align-items: center;
-        margin-bottom: 8rem;
-        padding: 0 1.5rem;
-      }
-
-      /* Alternate layout for even rows */
-      .project-wrapper .row:nth-child(even) {
-        grid-template-areas: "image text";
-      }
-
-      .project-wrapper__text {
-        grid-area: text;
-        text-align: left;
-        padding: 2rem;
-      }
-
-      .project-wrapper__text-title {
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        font-size: 2.5rem;
-        color: #272341;
-      }
-
-      .project-wrapper__text-subtitle {
-        margin-bottom: 2rem;
-        font-size: 1.4rem;
-        color: #666;
-      }
-
-      .designation {
-        font-weight: 600;
-        color: #5b86e5;
-        display: block;
-        margin-bottom: 0.5rem;
-        font-size: 1.6rem;
-      }
-
-      .tenure {
-        font-style: italic;
-        color: #888;
-        font-size: 1.3rem;
-      }
-
-      .project-wrapper__text-info {
-        margin-bottom: 1.5rem;
-        font-size: 1.6rem;
-        color: #555;
-      }
-
-      .project-wrapper__text-info li {
-        margin-bottom: 1rem;
-        line-height: 1.6;
-      }
-
-      .project-wrapper__image {
-        grid-area: image;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-      }
-
-      .thumbnail {
-        border: none;
-        box-shadow: 8px 8px 20px rgba(174, 174, 192, 0.3),
-          -5px -5px 15px rgba(255, 255, 255, 0.8);
-        border-radius: 15px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-        max-width: 300px;
-        width: 100%;
-      }
-
-      .thumbnail:hover {
-        transform: translateY(-5px);
-      }
-
-      .img-fluid {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .project-wrapper .row {
-          grid-template-columns: 1fr;
-          grid-template-areas:
-            "image"
-            "text";
-          gap: 2rem;
-        }
-
-        .project-wrapper .row:nth-child(even) {
-          grid-template-areas:
-            "image"
-            "text";
-        }
-
-        .project-wrapper__text {
-          text-align: center;
-          padding: 1rem;
-        }
-
-        .section-title {
-          font-size: 2.8rem;
-        }
-
-        .project-wrapper__text-title {
-          font-size: 2rem;
-        }
-      }
-
-      /* Color scheme adjustments */
-      .dark-blue-text {
-        color: #272341;
-      }
-
-      /* Improve the TCS section styling */
-      .project-wrapper__text-info p {
-        color: #666;
-        line-height: 1.7;
-      }
-    </style>
   </head>
 
   <body>
@@ -303,17 +129,21 @@
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              I'm a passionate Cloud & DevOps Engineer with hands-on experience
-              in AWS, Kubernetes, and Terraform. My journey began at TCS, where
-              I spent 3 years sharpening my cloud and automation skills on
-              enterprise-grade systems.
+              I'm a Cloud & DevOps Engineer by profession, and a part-time YAML
+              whisperer by destiny. I automate things so humans can do less
+              clicking and more thinking.
             </p>
             <p class="about-wrapper__info-text">
-              Currently at Trundl Labs, I work on Atlassian infrastructure
-              hosted on AWS and Kubernetes, focusing on security, scalability,
-              and automation. I enjoy solving infrastructure challenges,
-              learning new tools, and writing technical blogs to share my
-              knowledge.
+              When I'm not debugging why a pod isn't running (again), I'm either
+              writing blogs to convince others that DevOps is cool, or
+              convincing myself that the cloud isn't just someone else's
+              computer (spoiler: it is).
+            </p>
+            <p class="about-wrapper__info-text">
+              I believe good infrastructure is like good coffee — strong,
+              reliable, and should never be built at 2 AM without a plan. I
+              enjoy clean IaC, clever CLI tricks, and a good meme about DNS
+              issues.
             </p>
             <span class="about-wrapper__cta">
               <a
@@ -330,7 +160,7 @@
     </section>
     <!-- /END About Section -->
 
-    <!--Projects Section-->
+    <!--Experience Section-->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
@@ -420,7 +250,189 @@
         </div>
       </div>
     </section>
-    <!-- End Projects Section -->
+    <!-- End Experience Section -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills-full-container">
+        <h2 class="section-title">Skills & Technologies</h2>
+
+        <div class="skills-grid-container">
+          <!-- Cloud Technologies -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-cloud"></i>
+              Cloud Technologies
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Amazon Web Services">
+                <img src="./assets/Icons/aws.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="Microsoft Azure">
+                <img src="./assets/Icons/azure.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="Google Cloud Platform">
+                <img src="./assets/Icons/gcp.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Infrastructure as Code -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-code"></i>
+              Infrastructure as Code
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Terraform">
+                <img src="./assets/Icons/terraform.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-code-branch"></i>
+              Version Control
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Git">
+                <img src="./assets/Icons/git.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="GitHub">
+                <img src="./assets/Icons/github.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="BitBucket">
+                <img src="./assets/Icons/bitbucket.png" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Containerization -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fab fa-docker"></i>
+              Containerization
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Docker">
+                <img src="./assets/Icons/docker.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="Kubernetes">
+                <img src="./assets/Icons/kubernetes.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="Helm Charts">
+                <img src="./assets/Icons/Helm.png" height="50px" width="50px" />
+              </div>
+            </div>
+          </div>
+
+          <!-- CI/CD Tools -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-infinity"></i>
+              CI/CD Tools
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Jenkins">
+                <img src="./assets/Icons/jenkins.png" />
+              </div>
+              <div class="skill-icon" data-tooltip="GitHub Actions">
+                <img
+                  src="./assets/Icons/GitHub Actions.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+              <div class="skill-icon" data-tooltip="ArgoCD (GitOps)">
+                <img
+                  src="./assets/Icons/Argo CD.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Scripting & Automation -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-robot"></i>
+              Scripting & Automation
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Python (Boto3)">
+                <img
+                  src="./assets/Icons/Python.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+              <div class="skill-icon" data-tooltip="Ansible">
+                <img
+                  src="./assets/Icons/Ansible.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Security Tools -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-shield-alt"></i>
+              Security Tools
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="SonarQube">
+                <img
+                  src="./assets/Icons/SonarQube.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+              <div class="skill-icon" data-tooltip="Trivy">
+                <img
+                  src="./assets/Icons/aqua trivy.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+              <div class="skill-icon" data-tooltip="Snyk">
+                <img src="./assets/Icons/snyk.png" height="50px" width="50px" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Monitoring Tools -->
+          <div class="skills-column">
+            <h3 class="skills-column__title">
+              <i class="fas fa-chart-line"></i>
+              Monitoring Tools
+            </h3>
+            <div class="skills-icons-grid">
+              <div class="skill-icon" data-tooltip="Prometheus">
+                <img
+                  src="./assets/Icons/Prometheus.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+              <div class="skill-icon" data-tooltip="AWS CloudWatch">
+                <img
+                  src="./assets/Icons/cloudwatch.png"
+                  height="50px"
+                  width="50px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
 
     <!-- Contact Section -->
     <section id="contact">
