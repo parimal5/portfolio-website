@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com/" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <!-- Title: Portfolio title -->
     <title>Parimal | Cloud & DevOps Engineer</title>
@@ -104,7 +105,7 @@
           I'm a Cloud & DevOps Engineer.
         </h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -255,192 +256,209 @@
     <!-- Skills Section -->
     <section id="skills">
       <div class="skills-full-container">
-        <h2 class="section-title">Skills & Technologies</h2>
+        <h2 class="section-title" data-aos="flip-left">
+          Skills & Technologies
+        </h2>
 
         <div class="skills-grid-container">
-          <!-- Cloud Technologies -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-cloud"></i>
-              Cloud Technologies
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Amazon Web Services">
-                <img src="./assets/Icons/aws.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="Microsoft Azure">
-                <img src="./assets/Icons/azure.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="Google Cloud Platform">
-                <img src="./assets/Icons/gcp.png" />
-              </div>
+          <div class="skills-icons-grid">
+            <!-- Cloud Technologies -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="100">
+              <img src="/assets/icons/aws.png" alt="AWS" />
             </div>
-          </div>
-
-          <!-- Infrastructure as Code -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-code"></i>
-              Infrastructure as Code
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Terraform">
-                <img src="./assets/Icons/terraform.png" />
-              </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="150">
+              <img src="/assets/icons/azure.png" alt="Microsoft Azure" />
             </div>
-          </div>
-
-          <!-- Version Control -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-code-branch"></i>
-              Version Control
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Git">
-                <img src="./assets/Icons/git.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="GitHub">
-                <img src="./assets/Icons/github.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="BitBucket">
-                <img src="./assets/Icons/bitbucket.png" />
-              </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="200">
+              <img src="/assets/icons/gcp.png" alt="Google Cloud Platform" />
             </div>
-          </div>
 
-          <!-- Containerization -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fab fa-docker"></i>
-              Containerization
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Docker">
-                <img src="./assets/Icons/docker.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="Kubernetes">
-                <img src="./assets/Icons/kubernetes.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="Helm Charts">
-                <img src="./assets/Icons/Helm.png" height="50px" width="50px" />
-              </div>
+            <!-- IaC -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="250">
+              <img src="/assets/icons/terraform.png" alt="Terraform" />
             </div>
-          </div>
 
-          <!-- CI/CD Tools -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-infinity"></i>
-              CI/CD Tools
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Jenkins">
-                <img src="./assets/Icons/jenkins.png" />
-              </div>
-              <div class="skill-icon" data-tooltip="GitHub Actions">
-                <img
-                  src="./assets/Icons/GitHub Actions.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
-              <div class="skill-icon" data-tooltip="ArgoCD (GitOps)">
-                <img
-                  src="./assets/Icons/Argo CD.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
+            <!-- VCS -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="300">
+              <img src="/assets/icons/git.png" alt="Git" />
             </div>
-          </div>
-
-          <!-- Scripting & Automation -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-robot"></i>
-              Scripting & Automation
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Python (Boto3)">
-                <img
-                  src="./assets/Icons/Python.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
-              <div class="skill-icon" data-tooltip="Ansible">
-                <img
-                  src="./assets/Icons/Ansible.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="350">
+              <img src="/assets/icons/github.png" alt="GitHub" />
             </div>
-          </div>
-
-          <!-- Security Tools -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-shield-alt"></i>
-              Security Tools
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="SonarQube">
-                <img
-                  src="./assets/Icons/SonarQube.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
-              <div class="skill-icon" data-tooltip="Trivy">
-                <img
-                  src="./assets/Icons/aqua trivy.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
-              <div class="skill-icon" data-tooltip="Snyk">
-                <img src="./assets/Icons/snyk.png" height="50px" width="50px" />
-              </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="400">
+              <img src="/assets/icons/bitbucket.png" alt="BitBucket" />
             </div>
-          </div>
 
-          <!-- Monitoring Tools -->
-          <div class="skills-column">
-            <h3 class="skills-column__title">
-              <i class="fas fa-chart-line"></i>
-              Monitoring Tools
-            </h3>
-            <div class="skills-icons-grid">
-              <div class="skill-icon" data-tooltip="Prometheus">
-                <img
-                  src="./assets/Icons/Prometheus.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
-              <div class="skill-icon" data-tooltip="AWS CloudWatch">
-                <img
-                  src="./assets/Icons/cloudwatch.png"
-                  height="50px"
-                  width="50px"
-                />
-              </div>
+            <!-- Containers -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="450">
+              <img src="/assets/icons/docker.png" alt="Docker" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="500">
+              <img src="/assets/icons/kubernetes.png" alt="Kubernetes" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="550">
+              <img src="/assets/icons/helm.png" alt="Helm Charts" />
+            </div>
+
+            <!-- CI/CD -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="600">
+              <img src="/assets/icons/jenkins.png" alt="Jenkins" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="650">
+              <img
+                src="/assets/icons/GitHub Actions.png"
+                alt="GitHub Actions"
+              />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="700">
+              <img src="/assets/icons/Argo CD.png" alt="ArgoCD" />
+            </div>
+
+            <!-- Scripting -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="750">
+              <img src="/assets/icons/python.png" alt="Python" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="800">
+              <img src="/assets/icons/ansible.png" alt="Ansible" />
+            </div>
+
+            <!-- Security -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="850">
+              <img src="/assets/icons/sonarqube.png" alt="SonarQube" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="900">
+              <img src="/assets/icons/aqua trivy.png" alt="Trivy" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="950">
+              <img src="/assets/icons/snyk.png" alt="Snyk" />
+            </div>
+
+            <!-- Monitoring -->
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="1000">
+              <img src="/assets/icons/prometheus.png" alt="Prometheus" />
+            </div>
+            <div class="skill-icon" data-aos="flip-left" data-aos-delay="1050">
+              <img src="/assets/icons/cloudwatch.png" alt="CloudWatch" />
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- /END Skills Section -->
+
+    <section class="badges-section">
+      <h2 class="section-title" data-aos="flip-left">My Badges</h2>
+      <div class="badges-container">
+        <a
+          href="https://www.credly.com/badges/2d0296a9-9aea-42ca-bb23-736110169f12/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/aws-certified-solutions-architect-associate.png"
+            alt="AWS Solutions Architect"
+            class="badge-item"
+          />
+        </a>
+        <a
+          href="https://www.credly.com/badges/871dc7fc-19c2-4310-879b-ddbe962e1e30/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/aws-certified-developer-associate (1).png"
+            alt="AWS Developer"
+            class="badge-item"
+          />
+        </a>
+        <a
+          href="https://www.credly.com/badges/a5bb363a-3159-45b2-a123-63854e521390/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/aws-certified-sysops-administrator-associate (1).png"
+            alt="AWS SysOps"
+            class="badge-item"
+          />
+        </a>
+        <a
+          href="https://www.credly.com/badges/a35a9fdf-4c21-46c9-876d-9efb4d74a413/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/associate-cloud-engineer-certification (1).png"
+            alt="Google Cloud Engineer"
+            class="badge-item"
+        /></a>
+        <a
+          href="https://www.credly.com/badges/523e794a-b4e1-4e50-ac56-aa4a81b02643/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/cloud-digital-leader-certification.png"
+            alt="Google Cloud Digital Leader"
+            class="badge-item"
+        /></a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/ParimalMeshram-2820/34E9E26BA9D1303?sharingId=2058173E038086DB"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="assets/Icons/Badges/microsoft-certified-associate-badge.png"
+            alt="Microsoft Azure Associate"
+            class="badge-item"
+        /></a>
+        <a
+          href="https://learn.microsoft.com/api/credentials/share/en-us/ParimalMeshram-2820/8CA48F03904EF7EE?sharingId=2058173E038086DB"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/microsoft-certified-fundamentals-badge.png"
+            alt="Microsoft Azure Fundamentals"
+            class="badge-item"
+        /></a>
+        <a
+          href="https://www.credly.com/badges/66c149f0-c6a3-496b-85a2-992122e55611/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/assets/Icons/Badges/hashicorp-certified-terraform-associate-003 (1).png"
+            alt="Terraform"
+            class="badge-item"
+        /></a>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">
+            Ready to optimize your infrastructure and streamline your
+            deployments? I'm passionate about building scalable, reliable
+            systems that drive business success. Let's discuss how I can help
+            accelerate your cloud journey.
+          </p>
+          <a
+            href="mailto:your.email@example.com"
+            class="cta-btn cta-btn--resume"
+            >Let's Connect</a
+          >
+
+          <div class="availability">
+            <span class="availability-status">
+              <i class="fas fa-circle available"></i>
+              Available for immediate opportunities
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -454,31 +472,7 @@
         </a>
         <div class="social-links">
           <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a>
-          <a
-            href="#!"
+            href="https://www.linkedin.com/in/parimalmeshram/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -486,23 +480,41 @@
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/parimal5"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
           >
             <i class="fa-brands fa-github"></i>
           </a>
+          <a
+            href="https://medium.com/@parimalmeshram15"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="medium"
+          >
+            <i class="fa-brands fa-medium"></i>
+          </a>
+          <a
+            href="https://dev.to/parimal5"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="dev.to"
+          >
+            <i class="fa-brands fa-dev"></i>
+          </a>
+          <a
+            href="https://hub.docker.com/u/parimal5"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="docker"
+          >
+            <i class="fa-brands fa-docker"></i>
+          </a>
         </div>
         <hr />
         <p class="footer__text">
-          &copy; <span id="year"></span> - Template by
-          <a
-            href="https://github.com/AnilSeervi"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Anil Seervi</a
-          >. <br />Made with &hearts;
+          &copy; <span id="year"></span> Made with &hearts;
         </p>
       </div>
     </footer>
@@ -513,5 +525,12 @@
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // in ms
+        once: true, // animate only once on scroll
+      });
+    </script>
   </body>
 </html>
