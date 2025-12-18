@@ -148,11 +148,13 @@
             </p>
             <span class="about-wrapper__cta">
               <a
-                href="./assets/Parimal_CV_Cloud_Engineer.pdf"
+                href="https://www.linkedin.com/in/parimalmeshram/"
                 class="cta-btn cta-btn--resume"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View my LinkedIn profile"
               >
-                View Resume
+                View LinkedIn
               </a>
             </span>
           </div>
@@ -175,30 +177,40 @@
               </h3>
               <div class="project-wrapper__text-subtitle">
                 <span class="designation">Cloud Engineer</span>
-                <span class="tenure">June 2023 – Present</span>
+                <span class="tenure">June 2025 – Present</span>
               </div>
-              <div class="project-wrapper__text-info">
-                <p>
-                  Architected AWS Landing Zone with multi-account structure,
-                  centralized networking, and security guardrails for scalable,
-                  compliant enterprise cloud foundations.
-                </p>
-                <p>
-                  Built Infrastructure as Code with Terraform/Terragrunt and
-                  automated account provisioning via CI/CD, improving
-                  reliability and eliminating manual drift.
-                </p>
-                <p>
-                  Administered and optimized Atlassian (Jira, Confluence,
-                  Bitbucket), enabling agile delivery and seamless cross-team
-                  collaboration.
-                </p>
-                <p>
-                  Implemented secure, high-performance connectivity (Transit
-                  Gateway, Network Firewall, Site-to-Site VPN, Direct Connect)
-                  and led DR planning/testing to ensure business continuity.
-                </p>
-              </div>
+              <ul class="project-wrapper__text-info">
+                <li>
+                  Leading cloud infrastructure work for Atlassian-focused
+                  customers, designing a secure, multi-account AWS Landing Zone
+                  with Terraform and Terragrunt so new environments are
+                  repeatable, compliant, and easy to scale.
+                </li>
+                <li>
+                  Shaping hub-and-spoke network architectures with Transit
+                  Gateway, AWS Network Firewall, and Route 53 to provide
+                  controlled, highly available connectivity across accounts and
+                  regions.
+                </li>
+                <li>
+                  Engineering Atlassian Data Center workloads (Jira, Confluence)
+                  on AWS using ALB, EFS, and RDS Multi-AZ, focusing on stable
+                  performance, DR readiness, and smooth cutovers for enterprise
+                  teams.
+                </li>
+                <li>
+                  Building immutable infrastructure for internal SaaS platforms
+                  with EC2, Auto Scaling, ECS/App Runner, and managed databases
+                  like Aurora and ElastiCache, using reusable Terraform modules
+                  to keep everything consistent.
+                </li>
+                <li>
+                  Embedding DevSecOps practices by integrating tools such as
+                  Snyk and Trivy into CI/CD pipelines, and collaborating on
+                  basic FinOps automation to keep cloud costs predictable and
+                  under control.
+                </li>
+              </ul>
             </div>
             <div class="project-wrapper__image">
               <div class="thumbnail rounded">
@@ -221,24 +233,36 @@
                 <span class="designation">DevOps Engineer</span>
                 <span class="tenure">July 2022 – June 2025</span>
               </div>
-              <div class="project-wrapper__text-info">
-                <p>
-                  Managed AWS infrastructure and OpenShift Kubernetes clusters
-                  for enterprise apps with a focus on uptime and security.
-                </p>
-                <p>
-                  Developed reusable Terraform modules, reducing infrastructure
-                  drift and enabling consistent environments.
-                </p>
-                <p>
-                  Built CI/CD pipelines in Jenkins, improving deployment
-                  reliability and frequency.
-                </p>
-                <p>
-                  Created automation scripts in Bash and Python (Boto3) for cost
-                  optimization and daily operations.
-                </p>
-              </div>
+              <ul class="project-wrapper__text-info">
+                <li>
+                  Worked with global teams to run mission-critical workloads on
+                  AWS and OpenShift Kubernetes, managing clusters and
+                  infrastructure with a focus on stability, security, and clean
+                  observability.
+                </li>
+                <li>
+                  Helped orchestrate 50+ microservices using Kubernetes, Helm
+                  charts, and ArgoCD, collaborating with application teams to
+                  onboard services, optimize resource usage, and introduce HPA
+                  where it made sense.
+                </li>
+                <li>
+                  Built and maintained declarative Jenkins pipelines (Groovy)
+                  that automated build, test, and deploy stages, while
+                  integrating SonarQube checks to keep code quality visible in
+                  every release.
+                </li>
+                <li>
+                  Set up and tuned a monitoring stack using Prometheus and
+                  Grafana, creating practical dashboards and alerts so incidents
+                  were detected quickly and resolved with better context.
+                </li>
+                <li>
+                  Developed automation in Python (Boto3), Bash, and AWS Lambda
+                  for tasks like backups, log rotation, and routine maintenance,
+                  cutting down manual toil and improving operational hygiene.
+                </li>
+              </ul>
             </div>
             <div class="project-wrapper__image">
               <div class="thumbnail rounded">
@@ -406,6 +430,22 @@
           />
         </a>
         <a
+          href="https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="./assets/Icons/Badges/cka-certified-kubernetes-administrator.png"
+            alt="Certified Kubernetes Administrator (CKA)"
+            class="badge-item"
+        /></a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <img
+            src="./assets/Icons/Badges/terraform.png"
+            alt="HashiCorp Terraform Certified Associate"
+            class="badge-item"
+        /></a>
+        <a
           href="https://www.credly.com/badges/a35a9fdf-4c21-46c9-876d-9efb4d74a413/public_url"
           target="_blank"
           rel="noopener noreferrer"
@@ -445,15 +485,11 @@
             alt="Microsoft Azure Fundamentals"
             class="badge-item"
         /></a>
-        <a
-          href="https://www.credly.com/badges/66c149f0-c6a3-496b-85a2-992122e55611/public_url"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer">
           <img
-            src="./assets/Icons/Badges/terraform.png"
-            alt="Terraform"
-            class="badge-item"
+            src="./assets/Icons/Badges/OCI25CAA.png"
+            alt="Oracle Cloud Infrastructure Architect Associate 2025"
+            class="badge-item badge-item--oci"
         /></a>
       </div>
     </section>
